@@ -41,7 +41,7 @@ send_http_message (struct conn_s *connptr, int http_code,
         static const char *headers[] = {
                 "Server: " PACKAGE,
                 "Content-type: text/html",
-                "Connection: close"
+                "Connection: keep-alive"
         };
 
         http_message_t msg;
